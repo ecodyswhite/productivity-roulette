@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Productivity roulette</title>
+</head>
+<body>
+
+<p>This is the productivity roulette!  Use it to determine what you should be doing when you have downtime.</p>
+
+<p>
+
+<script>
+
+var productivityArray = ["cleaning", "study javascript", "study python", "study node.js", "study unity", "draw", "work on bots", "animate", "add features to productivity roulette"]; //The following is my own personal list; insert and remove items as you see fit.
+
+var durationArray = ["10", "20", "30"];  //Duration of the productivity activity; feel free to tweak that to your own specification.
+
+var randProd = productivityArray[Math.floor(Math.random() * productivityArray.length)];
+
+var randDur = durationArray[Math.floor(Math.random() * durationArray.length)];
+
+document.write("Your randomly selected productivity activity is " + randProd);
+
+document.write(" for " + randDur + " minutes.");
+
+</script>
+</p>
+</body>
+</html> 
